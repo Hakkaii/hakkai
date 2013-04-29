@@ -1,0 +1,46 @@
+// ie9 gradient
+$experimental-support-for-svg: true
+
+@import compass
++global-reset
++reset-html5
+
+@import utils
+@import sprite
+@import typo
+@import tipsy
+@import components
+@import nav
+
+#body
+  width: 100%
+
+#posts
+  .post
+    font-size: 16px
+    padding-left: 40px
+    height: 60px
+    &:hover
+      background: #f5f5f5
+    .user
+      float: left
+      width: 100px
+      padding-top: 8px
+    .content
+      float: left
+      height: 44px
+      border-left: $soft-border
+      padding: 8px 10px
+      > a
+        font-size: 20px
+    .toolbar
+      font-size: 14px
+      margin-top: 5px
+
+  .load-more a
+    display: block
+    background: #eef
+    text-align: center
+    padding: 5px
+    &:hover
+      background: #f4f4ff

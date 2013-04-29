@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  password:
+  pool: 5
+  encoding: utf8
+
+development:
+  <<: *default
+  database: hakkai_dev
+
+test:
+  <<: *default
+  database: hakkai_test
+
+production:
+  <<: *default
+  username: postgres
+  database: hakkai_prod

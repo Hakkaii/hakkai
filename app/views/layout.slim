@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+    title Hakkai
+    meta name="keywords" content="website"
+    link href="/favicon.ico" rel="icon" type="image/png"
+    == meta_csrf
+    == js :application
+    == css :application
+  body
+    == slim :_nav
+    #body
+      #notice = flash[:notice]
+      == yield
